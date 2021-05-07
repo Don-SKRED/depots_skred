@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {# Run `composer require symfony/webpack-encore-bundle`
+       and uncomment the following Encore helpers to start using Symfony UX #}
+    {% block stylesheets %}
+        {#{{ encore_entry_link_tags('app') }}#}
+        <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+        <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    {% endblock %}
+
+    {% block javascripts %}
+        {#{{ encore_entry_script_tags('app') }}#}
+      
+            <script type="text/javascript" src={{asset('assets/js/jquery2.min.js') }}></script>
+            <script type="text/javascript" src={{asset('assets/datatables/jquery.dataTables.min.js') }}></script>
+            <script type="text/javascript" src={{asset('assets/datatables/dataTables.bootstrap4.min.js') }}></script>
+            <script type="text/javascript" src={{asset('assets/js/script.js') }}></script>
+            <script type="text/javascript" src={{asset('assets/js/bootstrap.min.js') }}></script>
+
+    {% endblock %}
+</head>
+<body>
+{% block body %} 
+    <table class="table" id="mydatatable">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">first</th>
+            <th scope="col">last</th>
+            <th scope="col">handle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th class="row">1</th>
+            <td>mark</td>
+            <td>otto</td>
+            <td>mdo</td>
+        </tr>
+            <tr>
+            <th class="row">2</th>
+            <td>koko</td>
+            <td>bop</td>
+            <td>lap</td>
+        </tr>
+            <tr>
+            <th class="row">3</th>
+            <td>rudy</td>
+            <td>luc</td>
+            <td>einda</td>
+        </tr>
+        <tr>
+            <th class="row">3</th>
+            <td>miaro</td>
+            <td>nicky</td>
+            <td>gola</td>
+        </tr>
+            <tr>
+            <th class="row">4</th>
+            <td>andy</td>
+            <td>aint</td>
+            <td>lova</td>
+        </tr>
+            <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+                <tr>
+            <th class="row">5</th>
+            <td>hents</td>
+            <td>herizo</td>
+            <td>aro</td>
+        </tr>
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#mydatatable').DataTable();
+    });
+</script>
+{% endblock %}
+
+</body>
+</html>
